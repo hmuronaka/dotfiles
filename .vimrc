@@ -10,7 +10,6 @@ Bundle 'tpope/vim-rails.git'
 :source ~/.vim/vimrcs/common.vimrc
 :source ~/.vim/vimrcs/vimproject.vimrc
 :source ~/.vim/vimrcs/ruby.vimrc
-:source ~/.vim/vimrcs/hatena.vimrc
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim

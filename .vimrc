@@ -3,7 +3,7 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Bundle 'gmark/Vundle.vim'
+Bundle 'gmarik/Vundle.vim'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'

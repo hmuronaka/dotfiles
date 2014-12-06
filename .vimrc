@@ -2,11 +2,13 @@ set nocompatible " be iMproved
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-Bundle 'gmark/vundle'
+call vundle#begin()
+Bundle 'gmark/Vundle'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
+
+call vundle#end()
 
 :source ~/.vim/vimrcs/common.vimrc
 :source ~/.vim/vimrcs/vimproject.vimrc

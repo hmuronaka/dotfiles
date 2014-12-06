@@ -6,6 +6,7 @@ call vundle#rc()
 Bundle 'gmark/vundle'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-fugitive.git'
 
 :source ~/.vim/vimrcs/common.vimrc
 :source ~/.vim/vimrcs/vimproject.vimrc

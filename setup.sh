@@ -14,6 +14,7 @@ DOT_FILES="
 .aliases
 .functions
 .extra
+.rubyrc
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

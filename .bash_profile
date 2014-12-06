@@ -1,4 +1,14 @@
 # .bash_profile
+PATH=$PATH:$HOME/bin
+export PATH
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
@@ -9,9 +19,6 @@ fi
  
 # User specific environment and startup programs
  
-PATH=$PATH:$HOME/bin
-export PATH
-
 alias b='bundle'
 alias be='bundle exec'
 alias ber='bundle exec rails'

@@ -33,7 +33,13 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
+
 syntax on
+
+"コメントを見やすくする
+"syntax on より後にしないとダメ。
+highlight Comment ctermfg=93
+
 filetype on
 filetype indent on
 filetype plugin indent on

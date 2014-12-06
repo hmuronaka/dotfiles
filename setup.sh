@@ -14,6 +14,8 @@ DATESTR=`date +"%Y%m%d%k%M%S"`
 BACKUPDIR=$HOME/$DATESTR
 mkdir $BACKUPDIR
 
+# バックアップ作成と
+# シンボリックリンク作成
 for FILE in $DOT_FILES
 do
   OLDFILE=$HOME/$FILE
@@ -32,6 +34,7 @@ SOURCES="
 .bash_profile
 "
 
+# source実行
 for FILE in ${FILELIST};
 do
   SRCFILE=$HOME/$FILE
@@ -40,3 +43,5 @@ do
   fi
 done
 
+#neobundle setup
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh

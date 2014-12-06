@@ -1,6 +1,7 @@
 # .bash_profile
 PATH=$PATH:$HOME/bin
 export PATH
+export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -10,17 +11,8 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
-export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
- 
-# User specific environment and startup programs
- 
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin
-
-export PATH

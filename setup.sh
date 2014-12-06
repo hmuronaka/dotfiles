@@ -8,6 +8,12 @@ DOT_FILES="
 .vim
 .bashrc
 .bash_profile
+.path
+.bash_prompt
+.exports
+.aliases
+.functions
+.extra
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

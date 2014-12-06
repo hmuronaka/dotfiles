@@ -1,0 +1,6 @@
+nmap gp :pc<cr>
+nmap gn :nc<cr>
+nmap gi :ni<cr>
+nmap gI :pi<cr>
+nmap ,w :w<cr>
+nmap gf :xccmd jumpToDefinition<cr>

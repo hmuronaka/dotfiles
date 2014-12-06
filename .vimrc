@@ -16,12 +16,14 @@ call vundle#end()
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 
 :source ~/.vim/vimrcs/neobundles.vimrc
 :source ~/.vim/vimrcs/neocomplcache.vimrc
 :source ~/.vim/vimrcs/neocomplcache_snippets.vimrc
+
+call neobundle#end()
 
 "neocomplcacheの補完の色を見やすくする設定
 highlight Pmenu ctermbg=8

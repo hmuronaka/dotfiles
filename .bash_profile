@@ -24,10 +24,8 @@ alias s='sudo'
 alias tw='t update'
 alias v='vim'
 
-function cdd() {
-  cd "$1";
-  if [ $? -eq 0 ]; then
-    ls;
-  fi
-}
+# User specific environment and startup programs
 
+PATH=$PATH:$HOME/bin
+
+export PATH

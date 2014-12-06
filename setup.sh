@@ -52,3 +52,7 @@ done
 
 #neobundle setup
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+
+#submodule init
+git submodule init
+git submodule update

@@ -22,6 +22,7 @@ endif
 :source ~/.vim/vimrcs/neobundles.vimrc
 :source ~/.vim/vimrcs/neocomplcache.vimrc
 :source ~/.vim/vimrcs/neocomplcache_snippets.vimrc
+:source ~/.vim/vimrcs/unite.vimrc
 
 call neobundle#end()
 

@@ -10,6 +10,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'tomtom/tcomment_vim'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

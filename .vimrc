@@ -7,6 +7,8 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
+# CakePHPを利用する場合
+Bundle 'violetyk/cake.vim'
 
 call vundle#end()
 

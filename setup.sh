@@ -15,6 +15,7 @@ DOT_FILES="
 .functions
 .extra
 .rubyrc
+.snippets
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

@@ -1,0 +1,12 @@
+snippet mysql
+  default: &default
+    adapter: mysql2
+    encoding: utf8
+    pool: 5
+    username: ${1:username}
+    password: <%= ENV['DB_PASSWORD'] %>
+    socket: /var/run/mysqld/mysqld.sock
+
+  development:
+    <<: *default
+      database: ${2:database_name}

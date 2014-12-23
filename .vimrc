@@ -7,12 +7,15 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
+" CakePHPを利用する場合
+Bundle 'violetyk/cake.vim'
 
 call vundle#end()
 
 :source ~/.vim/vimrcs/common.vimrc
 :source ~/.vim/vimrcs/vimproject.vimrc
 :source ~/.vim/vimrcs/ruby.vimrc
+:source ~/.vim/vimrcs/tcomment.vimrc
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
@@ -45,3 +48,4 @@ filetype on
 filetype indent on
 filetype plugin indent on
 
+autocmd BufRead,BufNewFile *.erb set filetype=eruby.html

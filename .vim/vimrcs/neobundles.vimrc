@@ -1,5 +1,12 @@
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+    \ 'windows' : 'make -f make_mingw32.mak',
+    \ 'cygwin' : 'make -f make_cygwin.mak',
+    \ 'mac' : 'make -f make_mac.mak',
+    \ 'unix' : 'make -f make_unix.mak',
+    \ },
+  \ }
 NeoBundle 'VimClojure'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'Shougo/neocomplcache'
@@ -12,6 +19,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'matchit.zip'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

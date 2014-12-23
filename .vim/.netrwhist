@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/hmu/snippets'
 let g:netrw_dirhist_2='/Users/hmu/dotfiles/.vim/bundle/neosnippet/autoload/vital'
+let g:netrw_dirhist_3='/home/hmu/rails/money_life/config/environments'

@@ -17,6 +17,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'matchit.zip'
 
 "defに対するendなどを補完する.

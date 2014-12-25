@@ -6,7 +6,7 @@ snippet mysql
     username: ${1:username}
     password: <%= ENV['DB_PASSWORD'] %>
     socket: /var/run/mysqld/mysqld.sock
-
+  
   development:
     <<: *default
-      database: ${2:database_name}
+    database: ${2:database_name}

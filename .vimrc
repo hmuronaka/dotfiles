@@ -48,4 +48,4 @@ filetype on
 filetype indent on
 filetype plugin indent on
 
-autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
+

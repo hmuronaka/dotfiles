@@ -11,6 +11,7 @@ Bundle 'tpope/vim-fugitive.git'
 :source ~/.vim/vimrcs/common.vimrc
 :source ~/.vim/vimrcs/vimproject.vimrc
 :source ~/.vim/vimrcs/ruby.vimrc
+:source ~/.vim/vimrcs/python.vimrc
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim

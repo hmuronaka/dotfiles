@@ -1,0 +1,31 @@
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../..."
+alias ~="cd ~"
+
+alias b='bundle'
+alias be='bundle exec'
+alias ber='bundle exec rails'
+alias bers='ber s'
+alias berc='ber c'
+alias bec='be cap'
+alias bpv='vim ~/.bash_profile'
+alias bps='source ~/.bash_profile'
+alias g='git'
+alias gst='g status'
+alias gsth='g stash'
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+alias ls='ls -vxFa ${colorflag}'
+
+alias ip='ifconfig'
+alias s='sudo'
+alias tw='t update'
+alias v='vim'

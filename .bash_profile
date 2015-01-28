@@ -1,33 +1,22 @@
 # .bash_profile
-
+PATH=$PATH:$HOME/bin
+export PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
+
+export DB_USERNAME='money_life'
+export DB_PASSWORD='money_life'
+export DB_NAME='money_life'
+
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,rubyrc}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
- 
-# User specific environment and startup programs
- 
-PATH=$PATH:$HOME/bin
-export PATH
-
-alias b='bundle'
-alias be='bundle exec'
-alias ber='bundle exec rails'
-alias bers='ber s'
-alias bec='be cap'
-alias bpv='vim ~/.bash_profile'
-alias bps='source ~/.bash_profile'
-alias ls='ls -vxFGa'
-alias s='sudo'
-alias tw='t update'
-alias v='vim'
-
-function cdd() {
-  cd "$1";
-  if [ $? -eq 0 ]; then
-    ls;
-  fi
-}
-

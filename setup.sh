@@ -16,6 +16,7 @@ DOT_FILES="
 .extra
 .rubyrc
 .snippets
+.pryrc
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

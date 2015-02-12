@@ -1,14 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-<<<<<<< HEAD
-let g:netrw_dirhist_1='/home/hmu/src/imslp_api/spec'
-let g:netrw_dirhist_2='/home/hmu/src/imslp_api/spec/helpers'
-let g:netrw_dirhist_3='/home/hmu/src/imslp_service/lib/imslp_service'
-let g:netrw_dirhist_4='/home/hmu/src/imslp_api/spec/controllers'
-let g:netrw_dirhist_5='/home/hmu/src/imslp_api/app'
-let g:netrw_dirhist_6='/home/hmu/src/imslp_api/app/domains'
-let g:netrw_dirhist_7='/home/hmu/src/imslp_api/app/domains/imslp_service'
-=======
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/hmu/snippets'
 let g:netrw_dirhist_2='/Users/hmu/dotfiles/.vim/bundle/neosnippet/autoload/vital'
 let g:netrw_dirhist_3='/home/hmu/rails/money_life/config/environments'
@@ -16,4 +7,4 @@ let g:netrw_dirhist_4='/home/hmu/rails/money_life/app/views/shops'
 let g:netrw_dirhist_5='/home/hmu/rails/money_life/app/views/items'
 let g:netrw_dirhist_6='/home/hmu/rails/money_life/app/views/commands'
 let g:netrw_dirhist_7='/Users/hmu/src/plusadd/opencv_sample_py'
->>>>>>> ed1c50bc132fc6dc1c4f6042af763dc492398ad3
+let g:netrw_dirhist_8='/home/hmu/dotfiles/.vim'

@@ -38,6 +38,18 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
+set ruler
+set showcmd
+set laststatus=2
+set statusline+=[%n]
+"ホスト名表示
+set statusline+=%{matchstr(hostname(),'\\w\\+')}@
+"ファイル名表示
+set statusline+=%<%F
+"変更のチェック表示
+set statusline+=%m
+"読み込み専用かどうか表示
+set statusline+=%r
 
 syntax on
 

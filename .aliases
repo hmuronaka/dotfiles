@@ -15,6 +15,11 @@ alias bps='source ~/.bash_profile'
 alias g='git'
 alias gst='g status'
 alias gsth='g stash'
+alias gpom='git push origin master'
+alias gpull='git pull'
+alias gc='git commit -am'
+alias gch='git checout'
+alias gb='git branch'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

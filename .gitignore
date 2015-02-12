@@ -1,2 +1,3 @@
 *.swap
 .vim/bundle/
+.vim/.netrwhist

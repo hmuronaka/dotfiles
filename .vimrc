@@ -17,6 +17,7 @@ call vundle#end()
 :source ~/.vim/vimrcs/ruby.vimrc
 :source ~/.vim/vimrcs/python.vimrc
 :source ~/.vim/vimrcs/tcomment.vimrc
+:source ~/.vim/vimrcs/vim-bracketed-paste.vimrc
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim

@@ -6,7 +6,7 @@ nnoremap <silent> ,u :<C-u>Unite file<CR>
 nnoremap <silent> ,ufb :<C-u>Unite file buffer<CR>
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
-nnoremap <silent> ,um :<C-u>Unite mru<CR>
+nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
 
 ""grep検索
 nnoremap <silent> ,g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>

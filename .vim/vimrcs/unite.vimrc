@@ -4,7 +4,7 @@ let g:unite_source_history_yank_enable =1
 "Unite
 nnoremap <silent> ,u :<C-u>Unite file file/new -buffer-name=file<CR>
 nnoremap <silent> ,ufb :<C-u>Unite file buffer<CR>
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+nnoremap <silent> ,ub :<C-u>UniteWithBufferDir file file/new<CR>
 nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
 nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>

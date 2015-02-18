@@ -20,6 +20,8 @@ alias gpull='git pull'
 alias gc='git commit -am'
 alias gch='git checout'
 alias gb='git branch'
+alias ga='git add'
+alias gd='git diff'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -34,3 +36,5 @@ alias ip='ifconfig'
 alias s='sudo'
 alias tw='t update'
 alias v='vim'
+alias c='cd'
+alias l='ls'

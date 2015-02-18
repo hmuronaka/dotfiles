@@ -22,6 +22,6 @@ nnoremap <silent> ,r :<C-u>UniteResume search-buffer<CR>
 "unite grep にagを使う
 if executable('ag')
   let g:unite_source_grep_command='ag'
-  let g:unitesource_grep_default_opts='--nogroup --nocolor --column'
+  let g:unite_source_grep_default_opts='--nogroup --nocolor --column'
   let g:unite_source_grep_recursive_opt=''
 endif

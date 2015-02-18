@@ -6,10 +6,10 @@ nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 nnoremap <silent> ,w :w<CR>
 
-"vimgrepでQuickFixを表示する。
-augroup grepopen
-  autocmd!
-  autocmd QuickfixCmdPost *grep* cw
-augroup END 
+""vimgrepでQuickFixを表示する。
+"augroup grepopen
+"  autocmd!
+"  autocmd QuickfixCmdPost *grep* cw
+"augroup END 
 
 set number

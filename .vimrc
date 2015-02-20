@@ -17,7 +17,9 @@ call vundle#end()
 :source ~/.vim/vimrcs/ruby.vimrc
 :source ~/.vim/vimrcs/python.vimrc
 :source ~/.vim/vimrcs/tcomment.vimrc
-:source ~/.vim/vimrcs/vim-bracketed-paste.vimrc
+" OSXのterminalでは利用できないため
+" :source ~/.vim/vimrcs/vim-bracketed-paste.vimrc
+:source ~/.vim/vimrcs/vim-indent-guides.vimrc
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim

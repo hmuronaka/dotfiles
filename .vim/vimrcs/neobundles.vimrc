@@ -21,6 +21,7 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'matchit.zip'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

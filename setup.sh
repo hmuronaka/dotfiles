@@ -17,6 +17,7 @@ DOT_FILES="
 .rubyrc
 .snippets
 .pryrc
+.agignore
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

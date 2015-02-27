@@ -15,6 +15,7 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,rubyrc}; do
 done;
 unset file;
 
+source ~/dotfiles/git-completion.bash
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then

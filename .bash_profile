@@ -15,9 +15,14 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,rubyrc}; do
 done;
 unset file;
 
-source ~/dotfiles/git-completion.bash
-
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
+
+# User specific aliases and functions
+source ~/dotfiles/git-completion.bash
+source ~/dotfiles/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+#export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+export PS1='\[\033[32m\]\u@\h\[\033[00m\]:$(__git_ps1)\[\033[00m\]\$ '

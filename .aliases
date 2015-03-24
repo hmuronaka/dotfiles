@@ -22,6 +22,7 @@ alias gch='git checout'
 alias gb='git branch'
 alias ga='git add'
 alias gd='git diff'
+alias pi='pod install'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

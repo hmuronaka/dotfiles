@@ -18,6 +18,7 @@ DOT_FILES="
 .snippets
 .pryrc
 .agignore
+.chefrc
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

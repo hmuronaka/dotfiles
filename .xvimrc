@@ -4,3 +4,4 @@ nmap gi :ni<cr>
 nmap gI :pi<cr>
 nmap ,w :w<cr>
 nmap gf :xccmd jumpToDefinition<cr>
+imap <C-j> <ESC>

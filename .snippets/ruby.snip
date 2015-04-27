@@ -1,0 +1,10 @@
+snippet Dir search
+abbr  Dir.glob("*") do |filename| end
+  Dir.glob(${1:pattern}) do |filename|
+    ${2:code}
+  end
+
+snippet Path combine
+abbr Patname.new(parent) + filename
+  Pathname.new(${1:path}) + ${2:name})
+

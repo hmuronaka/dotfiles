@@ -1,7 +1,7 @@
 nmap gp :pc<cr>
 nmap gn :nc<cr>
-nmap gi :ni<cr>
-nmap gp :pi<cr>
+nmap ni :ni<cr>
+nmap np :pi<cr>
 nmap ,w :w<cr>
 nmap gf :xccmd jumpToDefinition<cr>
 imap <C-j> <ESC>

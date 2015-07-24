@@ -5,26 +5,24 @@ alias .....="cd ../../..."
 alias ~="cd ~"
 
 alias b='bundle'
+alias bi='bundle install'
 alias be='bundle exec'
 alias ber='bundle exec rails'
 alias bers='ber s'
 alias berc='ber c'
+alias spec='bundle exec spec'
 alias bec='be cap'
 alias bpv='vim ~/.bash_profile'
 alias bps='source ~/.bash_profile'
 alias g='git'
 alias gst='g status'
-alias gsth='g stash'
-alias gp='git push'
-alias gpull='git pull'
-alias gc='git commit -am'
-alias gch='git checout'
 alias gb='git branch'
 alias ga='git add'
 alias gd='git diff'
 alias pi='pod install'
 alias pd=pushd
 alias po=popd
+alias scheme='sisc'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

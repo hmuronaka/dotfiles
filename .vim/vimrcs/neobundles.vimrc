@@ -40,3 +40,16 @@ NeoBundleLazy 'Shougo/neosnippet', {
   \   'insert'  : 1,
   \   'unite_sources' : ['snippet', 'neosnippet/user', 'neosnippet/runtime'],
   \ }}
+
+NeoBundleLazy 'thoughtbot/vim-rspec', {
+  \ 'depends' : 'tpope/vim-dispatch',
+  \ 'autoload' : { 'filetypes' : ['ruby'] }
+  \}
+
+let s:bundle = neobundle#get('vim-rspec')
+function! s:bundle.hooks.on_source(bundle)
+  let g:rspec_command = "Dispatch bundle exec rake spec {spec}"
+endfunction
+
+
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}

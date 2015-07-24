@@ -53,4 +53,3 @@ endfunction
 
 
 NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}
-au FileType javascript call JavaScriptFold()

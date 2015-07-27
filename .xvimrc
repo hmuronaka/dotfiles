@@ -3,5 +3,14 @@ nmap gn :nc<cr>
 nmap ni :ni<cr>
 nmap np :pi<cr>
 nmap ,w :w<cr>
+
 nmap gf :xccmd jumpToDefinition<cr>
+
 imap <C-j> <ESC>
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+
+vnoremap <C--><C--> :xccmd commentAndUncommentCurrentLines<CR>
+nnoremap <C--><C--> :xccmd commentAndUncommentCurrentLines<CR>

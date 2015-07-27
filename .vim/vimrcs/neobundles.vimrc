@@ -51,3 +51,5 @@ function! s:bundle.hooks.on_source(bundle)
   let g:rspec_command = "Dispatch bundle exec rake spec {spec}"
 endfunction
 
+
+NeoBundleLazy 'jelera/vim-javascript-syntax', {'autoload':{'filetypes':['javascript']}}

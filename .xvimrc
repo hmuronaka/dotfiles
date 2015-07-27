@@ -14,3 +14,5 @@ noremap <C-h> <C-w>h
 
 vnoremap <C--><C--> :xccmd commentAndUncommentCurrentLines<CR>
 nnoremap <C--><C--> :xccmd commentAndUncommentCurrentLines<CR>
+
+set hlsearch

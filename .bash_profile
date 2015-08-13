@@ -30,3 +30,18 @@ export PATH=$PATH:~/src/plusadd/hm/pylearn2/pylearn2/scripts
 export PYLEARN2_VIEWER_COMMAND="open -Wn"
 export PYLEARN2_DATA_PATH=~/src/plusadd/hm/pylearn2/pylearn2/scripts/tutorials/grbm_smd/
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+xccd() {
+  source xccd.sh $1
+}
+
+_xccd() {
+CURRENT_DIR=`pwd`
+PROJECT_NAMES=`xclist ${CURRENT_DIR}`
+COMPREPLY=( `compgen -W "${PROJECT_NAMES}" $2`)
+}
+
+complete -F _xccd xccd

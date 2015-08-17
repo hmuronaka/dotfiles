@@ -45,3 +45,5 @@ COMPREPLY=( `compgen -W "${PROJECT_NAMES}" $2`)
 }
 
 complete -F _xccd xccd
+
+set -o vi

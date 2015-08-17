@@ -20,8 +20,9 @@ alias gb='git branch'
 alias ga='git add'
 alias gd='git diff'
 alias pi='pod install'
-alias pd=pushd
-alias po=popd
+alias ppm='/usr/bin/pp'
+alias p=pushd
+alias pp=popd
 alias scheme='sisc'
 
 # Detect which `ls` flavor is in use

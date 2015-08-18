@@ -44,3 +44,4 @@ p() {
 }
 
 stty discard undef
+bind -f .inputrc

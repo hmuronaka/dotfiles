@@ -39,7 +39,7 @@ source ~/.xcode_scripts/xcode_script.bash
 set -o vi
 
 p() {
-  pushd $1
+  pushd "$1"
   ls
 }
 

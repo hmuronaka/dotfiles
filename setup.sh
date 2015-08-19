@@ -20,6 +20,7 @@ DOT_FILES="
 .agignore
 .chefrc
 .gitignore_global
+.inputrc
 "
 
 DATESTR=`date +"%Y%m%d%k%M%S"`

@@ -34,14 +34,14 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-xccd() {
-  source xccd.sh $1
+source ~/.xcode_scripts/xcode_script.bash
+
+set -o vi
+
+p() {
+  pushd "$1"
+  ls
 }
 
-_xccd() {
-CURRENT_DIR=`pwd`
-PROJECT_NAMES=`xclist ${CURRENT_DIR}`
-COMPREPLY=( `compgen -W "${PROJECT_NAMES}" $2`)
-}
-
-complete -F _xccd xccd
+stty discard undef
+bind -f .inputrc

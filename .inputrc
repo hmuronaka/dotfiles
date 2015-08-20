@@ -1,2 +1,3 @@
 control-o: "pp\n"
 control-f: "fg\n"
+control-v: "vim\n"

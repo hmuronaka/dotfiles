@@ -34,7 +34,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-source ~/.xcode_scripts/xcode_script.bash
+if [ -f ~/.xcode_scripts/xcode_script.bash ]; then
+  . ~/.xcode_scripts/xcode_script.bash
+fi
 
 set -o vi
 
@@ -44,4 +46,7 @@ p() {
 }
 
 stty discard undef
-bind -f .inputrc
+
+if [ -f ~/.inputrc ]; then
+  bind -f ~/.inputrc
+fi

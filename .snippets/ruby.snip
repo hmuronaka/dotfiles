@@ -8,3 +8,8 @@ snippet Path combine
 abbr Patname.new(parent) + filename
   Pathname.new(${1:path}) + ${2:name})
 
+snippet yaml save
+abbr File.open(path, 'w')
+  File.open(${1:path}, 'w') do |f|
+    f.write ${2:data}.to_yaml
+  end

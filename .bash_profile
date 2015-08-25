@@ -50,3 +50,10 @@ stty discard undef
 if [ -f ~/.inputrc ]; then
   bind -f ~/.inputrc
 fi
+
+if [ -f ~/src/scripts/favorites/favorites ]; then
+  f() {
+    SELECTED_PATH=`~/src/scripts/favorites/favorites`
+    pushd "${SELECTED_PATH}"
+  }
+fi

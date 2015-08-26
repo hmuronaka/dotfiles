@@ -56,8 +56,11 @@ if [ -f ~/src/scripts/favorites/bin/favorites ]; then
     if [ $# -eq 0 ]; then
       SELECTED_PATH=`~/src/scripts/favorites/bin/favorites`
       pushd "${SELECTED_PATH}"
-    else
+    elif [ "$0" =~ "^--"  ]; then
       ~/src/scripts/favorites/bin/favorites $@
+    else # move dir
+      SELECTED_PATH=`~/src/scripts/favorites/bin/favorites $@`
+      pushd "${SELECTED_PATH}"
     fi
   }
 

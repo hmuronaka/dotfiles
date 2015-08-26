@@ -53,7 +53,20 @@ fi
 
 if [ -f ~/src/scripts/favorites/bin/favorites ]; then
   f() {
-    SELECTED_PATH=`~/src/scripts/favorites/bin/favorites`
-    pushd "${SELECTED_PATH}"
+    if [ $# -eq 0 ]; then
+      SELECTED_PATH=`~/src/scripts/favorites/bin/favorites`
+      pushd "${SELECTED_PATH}"
+    else
+      ~/src/scripts/favorites/bin/favorites $@
+    fi
   }
+
+  _f() {
+    FAVORITE_NAMES=`~/src/scripts/favorites/bin/favorites --list-names`
+    COMPREPLY=( `compgen -W "${FAVORITE_NAMES}" $2`)
+  }
+
+  complete -F _f f
 fi
+
+

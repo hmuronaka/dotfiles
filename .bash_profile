@@ -51,9 +51,9 @@ if [ -f ~/.inputrc ]; then
   bind -f ~/.inputrc
 fi
 
-if [ -f ~/src/scripts/favorites/favorites ]; then
+if [ -f ~/src/scripts/favorites/bin/favorites ]; then
   f() {
-    SELECTED_PATH=`~/src/scripts/favorites/favorites`
+    SELECTED_PATH=`~/src/scripts/favorites/bin/favorites`
     pushd "${SELECTED_PATH}"
   }
 fi

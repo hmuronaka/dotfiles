@@ -1,4 +1,7 @@
-snippet Dir search
+snippet Array include?
+abbr Array.include?
+  ${1:array}.include?(${2:obj})snippet Dir search
+
 abbr  Dir.glob("*") do |filename| end
   Dir.glob(${1:pattern}) do |filename|
     ${2:code}
@@ -13,3 +16,5 @@ abbr File.open(path, 'w')
   File.open(${1:path}, 'w') do |f|
     f.write ${2:data}.to_yaml
   end
+
+

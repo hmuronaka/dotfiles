@@ -51,29 +51,6 @@ if [ -f ~/.inputrc ]; then
   bind -f ~/.inputrc
 fi
 
-if [ -f ~/src/scripts/favorites/bin/favorites ]; then
-  f() {
-    if [ $# -eq 0 ]; then
-      SELECTED_PATH=`~/src/scripts/favorites/bin/favorites`
-      if [ $? -eq 0 ]; then
-        pushd "${SELECTED_PATH}"
-      fi
-    elif [ "$0" =~ "^--"  ]; then
-      ~/src/scripts/favorites/bin/favorites $@
-    else # move dir
-      SELECTED_PATH=`~/src/scripts/favorites/bin/favorites $@`
-      if [ $? -eq 0 ]; then
-        pushd "${SELECTED_PATH}"
-      fi
-    fi
-  }
-
-  _f() {
-    FAVORITE_NAMES=`~/src/scripts/favorites/bin/favorites --list-names`
-    COMPREPLY=( `compgen -W "${FAVORITE_NAMES}" $2`)
-  }
-
-  complete -F _f f
+if [ -f ~/.favorite_directories/favorite_directories.bash ]; then
+  source ~/.favorite_directories/favorite_directories.bash
 fi
-
-

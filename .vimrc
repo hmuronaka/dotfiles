@@ -35,11 +35,14 @@ endif
 
 call neobundle#end()
 
+set hlsearch
+
 "neocomplcacheの補完の色を見やすくする設定
 highlight Pmenu ctermbg=8
 highlight PmenuSel ctermbg=1
 highlight PmenuSbar ctermbg=0
 highlight DiffChange ctermfg=black
+highlight Search ctermbg=brown
 set tabstop=2
 set shiftwidth=2
 set expandtab

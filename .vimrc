@@ -39,6 +39,7 @@ call neobundle#end()
 highlight Pmenu ctermbg=8
 highlight PmenuSel ctermbg=1
 highlight PmenuSbar ctermbg=0
+highlight DiffChange ctermfg=black
 set tabstop=2
 set shiftwidth=2
 set expandtab

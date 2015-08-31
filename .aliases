@@ -24,6 +24,7 @@ alias pi='pod install'
 alias ppm='/usr/bin/pp'
 #alias p='pushd;ls'
 alias pp='popd;ls'
+alias pu='pod update'
 alias scheme='sisc'
 
 # Detect which `ls` flavor is in use

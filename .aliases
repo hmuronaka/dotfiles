@@ -41,3 +41,16 @@ alias tw='t update'
 alias v='vim'
 alias c='p'
 alias l='ls'
+
+pii() {
+  if [ -d Pods ]; then
+    rm -rf Pods
+  fi
+
+  if [ -f Podfile.lock ]; then
+    rm Podfile.lock
+  fi
+
+  pi
+}
+

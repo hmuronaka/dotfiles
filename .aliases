@@ -26,6 +26,7 @@ alias ppm='/usr/bin/pp'
 alias pp='popd;ls'
 alias pu='pod update'
 alias scheme='sisc'
+alias ctags="`brew --prefix`/bin/ctags"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

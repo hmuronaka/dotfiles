@@ -17,4 +17,7 @@ abbr File.open(path, 'w')
     f.write ${2:data}.to_yaml
   end
 
+snippet require prepare
+abbr unshift File.dirname(__FILE__)
+  $:.unshift File.dirname(__FILE__)
 

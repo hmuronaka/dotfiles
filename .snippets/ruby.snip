@@ -21,3 +21,6 @@ snippet require prepare
 abbr unshift File.dirname(__FILE__)
   $:.unshift File.dirname(__FILE__)
 
+snippet file expand path
+abbr File.expand_path
+  File.expand_path(${1:path}, __FILE__)

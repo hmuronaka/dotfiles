@@ -17,6 +17,10 @@ abbr File.open(path, 'w')
     f.write ${2:data}.to_yaml
   end
 
+snippet yaml load 
+abbr YAML.load_file('some.yaml')
+  YAML.load_file(${1:path})
+
 snippet require prepare
 abbr unshift File.dirname(__FILE__)
   $:.unshift File.dirname(__FILE__)
@@ -24,3 +28,4 @@ abbr unshift File.dirname(__FILE__)
 snippet file expand path
 abbr File.expand_path
   File.expand_path(${1:path}, __FILE__)
+

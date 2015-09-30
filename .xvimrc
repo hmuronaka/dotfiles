@@ -5,7 +5,7 @@ nmap gn :nc<cr>
 
 nmap gf :xccmd jumpToDefinition<cr>
 
-"imap <C-j> <ESC>
+imap <C-j> <ESC>
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l

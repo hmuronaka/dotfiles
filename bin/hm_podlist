@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+def pod(name, option = {}) 
+  puts name
+end
+
+def platform(value, ver)
+end
+
+def link_with(*args)
+
+end
+
+podfile = open('./Podfile', &:read)
+eval podfile

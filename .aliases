@@ -1,3 +1,5 @@
+alias pushd="pushd $1 > /dev/null"
+alias popd="popd > /dev/null"
 alias ..="pushd .."
 alias ...="pushd ../.."
 alias ....="pushd ../../.."

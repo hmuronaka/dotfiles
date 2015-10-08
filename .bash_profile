@@ -50,3 +50,12 @@ fi
 if [ -f ~/.favorite_directories/favorite_directories.bash ]; then
   source ~/.favorite_directories/favorite_directories.bash
 fi
+
+# For pod update completion
+
+_pod() {
+  PODLIST=`hm_podlist`
+  COMPREPLY=( `compgen -W "${PODLIST}" $2` )
+}
+
+complete -F _pod pod

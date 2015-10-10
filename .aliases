@@ -1,10 +1,10 @@
 alias pushd="pushd $1 > /dev/null"
 alias popd="popd > /dev/null"
-alias ..="pushd .."
-alias ...="pushd ../.."
-alias ....="pushd ../../.."
-alias .....="pushd ../../../.."
-alias ~="cd ~"
+alias ..="pushd ..;ls"
+alias ...="pushd ../..;ls"
+alias ....="pushd ../../..;ls"
+alias .....="pushd ../../../..;ls"
+alias ~="cd ~;ls"
 
 alias b='bundle'
 alias bi='bundle install'

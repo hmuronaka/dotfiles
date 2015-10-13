@@ -1,9 +1,9 @@
 alias pushd="pushd $1 > /dev/null"
 alias popd="popd > /dev/null"
-alias ..="pushd .."
-alias ...="pushd ../.."
-alias ....="pushd ../../.."
-alias .....="pushd ../../../.."
+alias ..="pushd ..;ls"
+alias ...="pushd ../..;ls"
+alias ....="pushd ../../..;ls"
+alias .....="pushd ../../../..;ls"
 alias ~="cd ~"
 
 alias b='bundle'

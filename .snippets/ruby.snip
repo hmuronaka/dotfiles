@@ -2,10 +2,15 @@ snippet Array include?
 abbr Array.include?
   ${1:array}.include?(${2:obj})snippet Dir search
 
+snippet Dir glob
 abbr  Dir.glob("*") do |filename| end
   Dir.glob(${1:pattern}) do |filename|
     ${2:code}
   end
+
+snippet Dir mkdir
+abbr FileUtils.mkdir_p(path)
+  FileUtils.mkdir_p(#{1:path})
 
 snippet Path combine
 abbr Patname.new(parent) + filename

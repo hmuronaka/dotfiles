@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+#
+require 'json'
+
+# argv[0] input json file.
+
+json = nil
+File.open(ARGV[0]) do |f|
+  json = JSON.load(f)
+end
+
+puts JSON.pretty_generate(json)

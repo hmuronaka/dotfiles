@@ -34,3 +34,14 @@ snippet file expand path
 abbr File.expand_path
   File.expand_path(${1:path}, __FILE__)
 
+snippet json read file
+abbr JSON.load
+  File.open(${1:path}) do |f|
+    JSON.load(f)
+  end
+
+snippet json write file. pretty format
+abbr JSON.pretty_generate
+  File.open(${1:path}, 'w') do |f|
+    f.write JSON.pretty_generate(${2:json})
+  end

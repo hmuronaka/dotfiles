@@ -3,10 +3,6 @@ PATH=$PATH:$HOME/bin
 export PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
-export DB_USERNAME='money_life'
-export DB_PASSWORD='money_life'
-export DB_NAME='money_life'
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.

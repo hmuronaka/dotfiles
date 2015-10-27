@@ -51,6 +51,8 @@ if [ -f ~/.favorite_directories/favorite_directories.bash ]; then
   source ~/.favorite_directories/favorite_directories.bash
 fi
 
+source ~/dotfiles/bin/ll.bash
+
 # For pod update completion
 
 _pod() {

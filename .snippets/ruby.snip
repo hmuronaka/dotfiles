@@ -37,7 +37,7 @@ abbr File.expand_path
 snippet json read file
 abbr JSON.load
   File.open(${1:path}) do |f|
-    JSON.load(f)
+    ${2:obj} = JSON.load(f)
   end
 
 snippet json write file. pretty format

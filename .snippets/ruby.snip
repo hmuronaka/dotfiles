@@ -40,6 +40,13 @@ abbr JSON.load
     ${2:obj} = JSON.load(f)
   end
 
+snippet json read file with symbolize_names
+abbr JSON.parse
+  File.open(${1:path}) do |f|
+    ${2:obj} = JSON.parse(f.read, symbolize_names: true)
+  end
+
+
 snippet json write file. pretty format
 abbr JSON.pretty_generate
   File.open(${1:path}, 'w') do |f|

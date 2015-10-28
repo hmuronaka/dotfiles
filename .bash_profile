@@ -61,3 +61,7 @@ _pod() {
 }
 
 complete -F _pod pod
+
+if [ -f ~/.nvm/nvm.sh ]; then
+  source ~/.nvm/nvm.sh
+fi

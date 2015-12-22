@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ ! -f ./Podfile ]; then
+  echo "platform :ios, '8.0'" > Podfile
+fi
+

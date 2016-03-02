@@ -27,6 +27,7 @@ alias gf='git fetch'
 alias gl="git config --local user.name '${GIT_LOCAL_USER}'; git config --local user.email '${GIT_LOCAL_EMAIL}'"
 alias pi='pod install'
 alias ppm='/usr/bin/pp'
+alias ggg='git checkout develop; git pull; git checkout -b'
 #alias p='pushd;ls'
 alias pp='popd;ls'
 alias pu='pod update'

@@ -23,6 +23,11 @@ NeoBundle 'matchit.zip'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'vim-utils/vim-man'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'rking/ag.vim'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {
@@ -64,3 +69,26 @@ NeoBundleLazy 'alpaca-tc/alpaca_tags', {
       \     'AlpacaTagsSet', 'AlpacaTagsCleanCache', 'AlpacaTagsEnable', 'AlpacaTagsDisable', 'AlpacaTagsKillProcess', 'AlpacaTagsProcessStatus',
       \ ],
       \ }}
+
+"markdownでプレビューを有効にするため
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:previm_open_cmd = 'open -a "Google Chrome"'
+
+"easy-motion
+map <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Ag
+noremap g* :Ag <cword><CR>
+

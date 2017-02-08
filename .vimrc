@@ -13,6 +13,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
 Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -104,3 +105,5 @@ endif
 " let g:apex_binary_tee = "c:\\bin\\UnixUtils\\tee.exe"
 " let g:apex_binary_touch = "c:\\bin\\UnixUtils\\touch.exe"
 
+"tagbar
+nmap <F8> :TagbarToggle<CR>

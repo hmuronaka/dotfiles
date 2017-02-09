@@ -14,6 +14,7 @@ Bundle 'szw/vim-tags'
 Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
+Bundle 'neowit/vim-force.com'
 
 call vundle#end()
 
@@ -76,12 +77,14 @@ let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -R {OPTIONS} {DIRECT
 
 set clipboard+=unnamed
 
-"vim-force
-if has("unix")
-	let &runtimepath=&runtimepath . ',~/dotfiles/.vim/bundle/vim-force.com'
-endif
-" make sure vim loads apexcode filetype detection
-runtime ftdetect/vim-force.com.vim
+""vim-force
+"if has("unix")
+"	let &runtimepath=&runtimepath . ',~/dotfiles/.vim/bundle/vim-force.com'
+"endif
+"" make sure vim loads apexcode filetype detection
+"runtime ftdetect/vim-force.com.vim
+
+
 "set autowrite " not strictly required, but without it you will be getting
                " errors when running commands that open new buffer 
 			   " (e.g. :ApexQuery or :ApexExecuteAnonymous) on unsaved file

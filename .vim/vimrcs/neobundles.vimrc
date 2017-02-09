@@ -28,6 +28,8 @@ NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'rking/ag.vim'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'ternjs/tern_for_vim'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

@@ -55,12 +55,12 @@ source ~/dotfiles/bin/ll.bash
 
 # For pod update completion
 
-_pod() {
-  PODLIST=`hm_podlist`
-  COMPREPLY=( `compgen -W "${PODLIST}" $2` )
-}
-
-complete -F _pod pod
+#_pod() {
+#  PODLIST=`hm_podlist`
+#  COMPREPLY=( `compgen -W "${PODLIST}" $2` )
+#}
+#
+#complete -F _pod pod
 
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh

@@ -23,6 +23,8 @@ NeoBundle 'matchit.zip'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'vim-utils/vim-man'
+NeoBundle 'vim-rails.git'
+NeoBundle 'rking/ag.vim'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

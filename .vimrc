@@ -15,6 +15,7 @@ Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
+Bundle 'lightning-vim'
 
 call vundle#end()
 

@@ -15,6 +15,7 @@ Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
+Bundle 'lightning-vim'
 
 call vundle#end()
 
@@ -28,7 +29,7 @@ call vundle#end()
 " OSXのterminalでは利用できないため " :source ~/.vim/vimrcs/vim-bracketed-paste.vimrc
 :source ~/.vim/vimrcs/vim-indent-guides.vimrc
 :source ~/.vim/vimrcs/vim-syntastic.vimrc
-:source ~/.vim/bundle/lightning-vim/plugin/lightning-vim.vim
+":source ~/.vim/bundle/lightning-vim/plugin/lightning-vim.vim
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim

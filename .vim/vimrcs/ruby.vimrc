@@ -4,4 +4,5 @@ augroup rubysyntaxcheck
 augroup END
 
 " rubyを実行
-nnoremap <C-e><C-r> :w<CR> :!ruby %<CR>
+" eが潰れるのが嫌なのでコメントアウト
+"nnoremap <C-e><C-r> :w<CR> :!ruby %<CR>

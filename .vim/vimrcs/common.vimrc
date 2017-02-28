@@ -7,8 +7,8 @@ nnoremap <silent> ]B :blast<CR>
 nnoremap <silent> ,w :w<CR>
 nnoremap <silent> [t :tabprevious<CR>
 nnoremap <silent> ]t :tabnext<CR>
-nnoremap <silent> [c :cprevious<CR>
-nnoremap <silent> ]c :cnext<CR>
+nnoremap <silent> [c :cprevious<CR>zz
+nnoremap <silent> ]c :cnext<CR>zz
 
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j

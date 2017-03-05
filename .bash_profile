@@ -65,3 +65,8 @@ source ~/dotfiles/bin/ll.bash
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
 fi
+
+awscli_path=`which aws_completer`
+if [ -f $awscli_path ]; then
+  complete -C $awscli_path aws
+fi

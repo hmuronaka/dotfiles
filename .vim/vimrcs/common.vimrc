@@ -34,3 +34,5 @@ inoremap <C-l> <Right>
 "augroup END 
 
 set number
+
+

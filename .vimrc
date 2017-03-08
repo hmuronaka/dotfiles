@@ -15,7 +15,8 @@ Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
-Bundle 'lightning-vim'
+Bundle 'hmuronaka/lightning-vim'
+Bundle 'hmuronaka/json_parser_vim'
 
 call vundle#end()
 
@@ -107,3 +108,15 @@ let g:apex_workspace_path=expand('~/src/apex_workspaces')
 
 "tagbar
 nmap <F8> :TagbarToggle<CR>
+
+function! s:Gulpwatch()
+  exe 'split'
+  exe 'resize +15'
+  exe 'wincmd j'
+  exe 'VimShell'
+endfunction
+
+command! -bang -buffer -nargs=0 Gulpwatch call s:Gulpwatch()
+
+
+

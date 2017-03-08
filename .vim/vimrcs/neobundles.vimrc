@@ -32,6 +32,7 @@ NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'ap/vim-css-color'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

@@ -8,7 +8,7 @@ Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
 " CakePHPを利用する場合
-Bundle 'violetyk/cake.vim'
+"Bundle 'violetyk/cake.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
 Bundle 'gregsexton/gitv'

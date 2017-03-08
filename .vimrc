@@ -109,14 +109,3 @@ let g:apex_workspace_path=expand('~/src/apex_workspaces')
 "tagbar
 nmap <F8> :TagbarToggle<CR>
 
-function! s:Gulpwatch()
-  exe 'split'
-  exe 'resize +15'
-  exe 'wincmd j'
-  exe 'VimShell'
-endfunction
-
-command! -bang -buffer -nargs=0 Gulpwatch call s:Gulpwatch()
-
-
-

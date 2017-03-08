@@ -15,7 +15,7 @@ Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
-Bundle 'lightning-vim'
+Bundle 'hmuronaka/lightning-vim'
 Bundle 'hmuronaka/json_parser_vim'
 
 call vundle#end()

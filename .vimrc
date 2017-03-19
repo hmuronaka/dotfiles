@@ -8,14 +8,15 @@ Bundle 'slim-template/vim-slim.git'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
 " CakePHPを利用する場合
-Bundle 'violetyk/cake.vim'
+"Bundle 'violetyk/cake.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
 Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
-Bundle 'lightning-vim'
+Bundle 'hmuronaka/lightning-vim'
+Bundle 'hmuronaka/json_parser_vim'
 
 call vundle#end()
 
@@ -107,3 +108,4 @@ let g:apex_workspace_path=expand('~/src/apex_workspaces')
 
 "tagbar
 nmap <F8> :TagbarToggle<CR>
+

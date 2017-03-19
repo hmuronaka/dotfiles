@@ -7,6 +7,7 @@ nnoremap <silent> ,ufb :<C-u>Unite file buffer<CR>
 nnoremap <silent> ,ub :<C-u>UniteWithBufferDir file file/new<CR>
 nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
 nnoremap <silent> ,um :<C-u>Unite file_mru<CR>
+nnoremap <silent> ,ug :<C-u>Unite file_rec/git buffer<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 nnoremap <silent> ,uh :<C-u>Unite history/yank <CR>
 

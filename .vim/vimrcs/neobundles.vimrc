@@ -34,6 +34,7 @@ NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'ap/vim-css-color'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'itchyny/vim-cursorword'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {

@@ -35,6 +35,7 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'ap/vim-css-color'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'itchyny/vim-cursorword'
+NeoBundle 'scrooloose/syntastic'
 
 "defに対するendなどを補完する.
 NeoBundleLazy 'taichouchou2/vim-endwise.git', {
@@ -95,3 +96,9 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+"syntastic
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_enable_signs = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0

@@ -1,5 +1,5 @@
 # .bash_profile
-PATH=$PATH:$HOME/bin
+PATH=$PATH:$HOME/bin:/Users/hmuronaka/Library/Android/sdk/platform-tools
 export PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
 

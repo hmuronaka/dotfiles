@@ -1,0 +1,60 @@
+snippet test_str_is_empty
+abbr string の文字列長が 0 ならば真となる。
+  if [ -z ${1:string} ]; then
+    ${2:code}
+  fi
+
+snippet test_str_is_not_empty
+abbr string の文字列長が 0 より大ならば真となる。
+  if [ -n ${1:string} ]; then
+    ${2:code}
+  fi
+
+snippet test_is_directory
+abbr file がディレクトリならば真となる。
+  if [ -d ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_is_file
+abbr file が普通のファイルならば真となる。
+  if [ -f ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_file_is_not_empty
+abbr file が 0 より大きいサイズならば真となる。
+  if [ -s ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_file_exists
+abbr fileが存在するならば真となる。
+  if [ -r ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_file_is_readable
+abbr file が読み取り可能ならば真となる。
+  if [ -r ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_file_is_writable
+abbr file が書き込み可能ならば真となる。
+  if [ -w ${1:file} ]; then
+    ${2:code}
+  fi
+
+snippet test_is_executable
+abbr file が実行可能ならば真となる。
+  if [ -x ${1:file} ]; then
+    ${2:code}
+  fi
+
+
+
+
+
+
+

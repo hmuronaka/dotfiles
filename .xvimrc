@@ -1,5 +1,7 @@
 nmap gp :pc<cr>
 nmap gn :nc<cr>
+nmap <C-o> :pj<cr>
+nmap <C-i> :nj<cr>
 "nmap ni :ni<cr>
 "nmap np :pi<cr>
 

@@ -1,4 +1,5 @@
+#!/bin/sh
 if [ -a $HOME/.rbenv/ ]; then
   PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - )"
 fi

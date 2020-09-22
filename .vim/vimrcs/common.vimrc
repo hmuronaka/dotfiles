@@ -22,6 +22,7 @@ nnoremap <C-h> <C-w>h
 
 
 inoremap <C-j> <ESC>
+inoremap <C-k> <ENTER>
 "inoremap <C-j> <Down>
 "inoremap <C-k> <Up>
 inoremap <C-h> <Left>

@@ -62,6 +62,7 @@ source ~/dotfiles/bin/ll.bash
 #
 #complete -F _pod pod
 
+export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
 fi
@@ -70,3 +71,9 @@ awscli_path=`which aws_completer`
 if [ -f $awscli_path ]; then
   complete -C $awscli_path aws
 fi
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+

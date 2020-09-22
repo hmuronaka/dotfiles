@@ -17,6 +17,12 @@ Plug 'tpope/vim-surround'
 Plug 'lambdalisue/vim-pyenv'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'alvan/vim-closetag'
+Plug 'thinca/vim-quickrun'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 "coc
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
@@ -53,7 +59,9 @@ set expandtab
 set autoindent
 set ruler
 set encoding=utf-8
-
+" https://vim-jp.org/vimdoc-ja/options.html#'iskeyword'
+" https://qiita.com/YamasakiKenta/items/fee2a366348b9da345e8
+set isk+=-
 syntax on
 
 "コメントを見やすくする
@@ -85,13 +93,6 @@ let g:user_emmet_settings = {
   \  }
   \}
 
-"emmit
-let g:user_emmet_settings = {
-  \  'vue' : {
-  \    'extends' : 'html',
-  \  }
-  \}
-
 """"""""""""""""""""""""""""""""""""""""
 "easy-motion
 
@@ -106,9 +107,18 @@ nnoremap [fgf] <Nop>
 nmap ,f [fgf]
 nnoremap <silent> [fgf] :GFiles<CR>
 
+""""""""""""""""""""""""""""""""""""""""
+"prettier
+let g:prettier#autoformat = 1
+"Allow auto formatting for files without "@format" or "@prettier" tag
+let g:prettier#autoformat_require_pragma = 0
+
 " coc
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 :source ~/.vim/vimrcs/coc.vimrc
 
 "denite
 :source ~/.vim/vimrcs/denite.vimrc
+
+"closing-tag
+:source ~/.vim/vimrcs/closing-tag.vimrc

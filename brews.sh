@@ -1,6 +1,7 @@
 #!/bin/sh
 CMDS="
-llvm
+#llvm
+peco
 "
 
 echo $CMDS

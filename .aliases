@@ -6,7 +6,7 @@ alias ....="pushd ../../..;ls"
 alias .....="pushd ../../../..;ls"
 alias ~="cd ~;ls"
 
-alias b='bundle'
+alias b='~/bin/get_bookmark.rb | peco | xargs open'
 alias bi='bundle install'
 alias be='bundle exec'
 alias ber='bundle exec rails'
@@ -18,13 +18,15 @@ alias spec='bundle exec spec'
 alias bec='be cap'
 alias bpv='vim ~/.bash_profile'
 alias bps='source ~/.bash_profile'
+alias c='cd'
 alias g='git'
 alias gst='g status'
 alias gb='git branch'
-alias ga='git add'
+alias gc='git commit'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl="git config --local user.name '${GIT_LOCAL_USER}'; git config --local user.email '${GIT_LOCAL_EMAIL}'"
+alias gap='git add -p'
 alias pi='pod install'
 alias ppm='/usr/bin/pp'
 alias ggg='git checkout develop; git pull; git checkout -b'
@@ -36,6 +38,11 @@ alias gp='gulp deploy'
 alias dirsize='du -sh -c *'
 
 
+
+#default color
+# from https://analytics-note.xyz/mac/mac-lscolors/
+#export LSCOLORS=exfxcxdxbxegedabagacad
+export LSCOLORS=gxfxcxdxbxegedabagacad
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"
@@ -65,3 +72,12 @@ pii() {
   pi
 }
 
+
+# https://qiita.com/sonatard/items/fe401c597e8e51d4e243
+function git-changed-files() {
+  git status --short | peco --prompt GST | awk '{print $2}'
+}
+
+alias -g F='$(git-changed-files)'
+alias -g B='$(git branch | peco)'
+alias ga='git add F'

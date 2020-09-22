@@ -102,10 +102,10 @@ nmap ,s <Plug>(easymotion-overwin-f2)
 " Move to word
 nmap ,w <Plug>(easymotion-overwin-w)"
 
-"fgf
-nnoremap [fgf] <Nop>
-nmap ,f [fgf]
-nnoremap <silent> [fgf] :GFiles<CR>
+"fzf
+nnoremap [fzf] <Nop>
+nmap ,f [fzf]
+nnoremap <silent> [fzf] :GFiles<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 "prettier

@@ -6,10 +6,8 @@ DOT_FILES="
 .vimrc
 .xvimrc
 .vim
-.bashrc
-.bash_profile
+.zshrc
 .path
-.bash_prompt
 .exports
 .aliases
 .functions
@@ -18,7 +16,6 @@ DOT_FILES="
 .snippets
 .pryrc
 .agignore
-.chefrc
 .gitignore_global
 .inputrc
 "

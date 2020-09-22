@@ -107,6 +107,9 @@ nnoremap [fzf] <Nop>
 nmap ,f [fzf]
 nnoremap <silent> [fzf] :GFiles<CR>
 
+" show hidden file
+let $FZF_DEFAULT_COMMAND='rg --hidden --files -g ''!.git'' '
+
 """"""""""""""""""""""""""""""""""""""""
 "prettier
 let g:prettier#autoformat = 1

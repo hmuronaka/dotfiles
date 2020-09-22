@@ -1,5 +1,6 @@
 # .bash_profile
-PATH=$PATH:$HOME/bin:/Users/hmuronaka/Library/Android/sdk/platform-tools
+LLVM_PATH=/usr/local/opt/llvm/bin
+PATH=$PATH:$HOME/bin:/Users/hmuronaka/Library/Android/sdk/platform-tools:$LLVM_PATH
 export PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
 

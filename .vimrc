@@ -4,7 +4,14 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'elzr/vim-json'
+
+
+"coc
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-json'
+"Plug 'clangd/coc-clangd'
+
 
 call plug#end()
 
@@ -118,3 +125,7 @@ set clipboard+=unnamed
 " "tagbar
 " nmap <F8> :TagbarToggle<CR>
 "
+
+" coc
+" https://github.com/neoclide/coc.nvim#example-vim-configuration
+:source ~/.vim/vimrcs/coc.vimrc

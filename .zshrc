@@ -76,7 +76,7 @@ zinit light "lukechilds/zsh-better-npm-completion"
 
 #
 # dotfiles
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH:~/.cargo/bin"
 source ~/.aliases
 source ~/dotfiles/google.sh
 

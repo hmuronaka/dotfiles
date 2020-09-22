@@ -3,14 +3,15 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-fugitive'
 Plug 'elzr/vim-json'
-
 
 "coc
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'neoclide/coc-tsserver'
 Plug 'neoclide/coc-json'
 "Plug 'clangd/coc-clangd'
+
 
 
 call plug#end()

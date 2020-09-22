@@ -1,0 +1,16 @@
+snippet aura:attribute-with-default
+abbr aura:attribute with default
+  <aura:attribute name="${1:name}" type="${2:type}" default="${3:default}" description="${4:description}" />
+
+snippet aura:attribute-without-default
+abbr aura:attribute without default
+  <aura:attribute name="${1:name}" type="${2:type}" description="${4:description}" />
+
+snippet aura:method
+abbr <aura:method name="open" action=""}
+  <aura:method name="${1:name}" action="${2:action}" description="${3:description}">
+  </aura:method>
+
+snippet aura:registerEvent
+abbr <aura:registerEvent name="" type="" />
+  <aura:registerEvent name="${1:name}" type="${2:type}" />

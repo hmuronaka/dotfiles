@@ -9,7 +9,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-fugitive.git'
 " CakePHPを利用する場合
 "Bundle 'violetyk/cake.vim'
-Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
 Bundle 'gregsexton/gitv'
 Bundle 'kchmck/vim-coffee-script'
@@ -17,6 +17,9 @@ Bundle 'majutsushi/tagbar'
 Bundle 'neowit/vim-force.com'
 Bundle 'hmuronaka/lightning-vim'
 Bundle 'hmuronaka/json_parser_vim'
+Bundle 'tpope/vim-surround.git'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'grvcoelho/vim-javascript-snippets'
 
 call vundle#end()
 
@@ -29,7 +32,7 @@ call vundle#end()
 :source ~/.vim/vimrcs/tcomment.vimrc
 " OSXのterminalでは利用できないため " :source ~/.vim/vimrcs/vim-bracketed-paste.vimrc
 :source ~/.vim/vimrcs/vim-indent-guides.vimrc
-:source ~/.vim/vimrcs/vim-syntastic.vimrc
+" :source ~/.vim/vimrcs/vim-syntastic.vimrc
 :source ~/.vim/bundle/lightning-vim/plugin/lightning-vim.vim
 
 if has('vim_starting')
@@ -68,7 +71,7 @@ filetype on
 filetype indent on
 filetype plugin indent on
 
-autocmd VimEnter * VimFiler -split -simple -winwidth=40 -no-quit
+"autocmd VimEnter * VimFiler -split -simple -winwidth=40 -no-quit
 let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 let g:netrw_liststyle=3

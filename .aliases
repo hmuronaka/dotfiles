@@ -32,6 +32,8 @@ alias ggg='git checkout develop; git pull; git checkout -b'
 alias pp='popd;ls'
 alias pu='pod update'
 alias scheme='sisc'
+alias gp='gulp deploy'
+alias dirsize='du -sh -c *'
 
 
 # Detect which `ls` flavor is in use

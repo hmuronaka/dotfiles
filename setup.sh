@@ -60,6 +60,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 git submodule init
 git submodule update
 
-"config
+#config
 mkdir $HOME/.config
 ln -sf $HOME/$DOT_FILES/config/peco $HOME/.config/peco

@@ -1,5 +1,6 @@
 # .bash_profile
-PATH=$PATH:$HOME/bin
+LLVM_PATH=/usr/local/opt/llvm/bin
+PATH=$PATH:$HOME/bin:/Users/hmuronaka/Library/Android/sdk/platform-tools:$LLVM_PATH
 export PATH
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
@@ -19,9 +20,12 @@ fi
 # User specific aliases and functions
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
+source ~/dotfiles/gulp-prompt.sh
+
+
 GIT_PS1_SHOWDIRTYSTATE=true
 #export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\W:$(__git_ps1)\[\033[00m\]\$ '
+export PS1='\[\033[32m\]\u\[\033[00m\]:\W:$(__gulp_ps1_):$(__git_ps1)\[\033[00m\]\$ '
 export PATH=$PATH:~/src/plusadd/hm/pylearn2/pylearn2/scripts
 export PYLEARN2_VIEWER_COMMAND="open -Wn"
 export PYLEARN2_DATA_PATH=~/src/plusadd/hm/pylearn2/pylearn2/scripts/tutorials/grbm_smd/
@@ -62,6 +66,7 @@ source ~/dotfiles/bin/ll.bash
 #
 #complete -F _pod pod
 
+export NVM_DIR="$HOME/.nvm"
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
 fi
@@ -70,3 +75,9 @@ awscli_path=`which aws_completer`
 if [ -f $awscli_path ]; then
   complete -C $awscli_path aws
 fi
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+

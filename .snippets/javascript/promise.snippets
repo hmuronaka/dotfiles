@@ -1,0 +1,17 @@
+snippet Promise
+abbr new Promise($A.getCallback(function(resolve, reject) {
+  new Promise($A.getCallback(function(resolve, reject) {
+  })).then($A.getCallback(function(${1:res}) {
+  })).catch($A.getCallback(function(error) {
+  }));
+
+snippet then  
+abbr then($A.getCallback(function(${1:res}) {
+  then($A.getCallback(function(${1:res}) {
+  }))
+
+snippet catch
+abbr catch($A.getCallback(function(error) {
+  catch($A.getCallback(function(error) {
+  }));
+

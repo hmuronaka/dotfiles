@@ -46,6 +46,8 @@ call plug#end()
 source ~/.vim/vimrcs/common.vimrc
 
 set hlsearch
+set incsearch
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 "neocomplcacheの補完の色を見やすくする設定
 highlight Pmenu ctermbg=8

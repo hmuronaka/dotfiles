@@ -72,12 +72,16 @@ pii() {
   pi
 }
 
+function _git-ls-file() {
+  git ls-files | peco --select-1
+}
 
 # https://qiita.com/sonatard/items/fe401c597e8e51d4e243
 function git-changed-files() {
   git status --short | peco --prompt GST | awk '{print $2}'
 }
 
+alias -g git-ls-file='$(_git-ls-file)'
 alias -g F='$(git-changed-files)'
 alias -g B='$(git branch | peco)'
 alias ga='git add F'

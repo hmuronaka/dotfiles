@@ -81,3 +81,5 @@ function git-changed-files() {
 alias -g F='$(git-changed-files)'
 alias -g B='$(git branch | peco)'
 alias ga='git add F'
+alias xc='cd `dirname $(ls_xcodeproj.rb | peco --select-1)`'
+alias xo='PROJ=$(ls_xcodeproj.rb | peco --select-1); cd `dirname ${PROJ}`; open ${PROJ}'

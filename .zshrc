@@ -81,6 +81,15 @@ source ~/.aliases
 source ~/dotfiles/google.sh
 
 ########################################
+# key-binding
+#
+
+# 参考 https://qiita.com/sfuta/items/a72f7bd194a61353c9fe
+__popd() { popd; zle reset-prompt }
+zle -N __popd
+bindkey '^O' __popd
+
+########################################
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

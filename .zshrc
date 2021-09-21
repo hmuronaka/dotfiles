@@ -28,9 +28,6 @@ zinit light-mode for \
 ########################################
 ### setup zinit from zinit's README
 
-# Two regular plugins loaded without investigating.
-zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma/fast-syntax-highlighting
 
 # Plugin history-search-multi-word loaded with investigating.
 zinit load zdharma/history-search-multi-word
@@ -39,15 +36,17 @@ zinit load zdharma/history-search-multi-word
 zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
 
-# A glance at the new for-syntax – load all of the above
-# plugins with a single command. For more information see:
-# https://zdharma.org/zinit/wiki/For-Syntax/
+#zsh-autosugesstions ... terminalで文字入力すると補完候補が出るplugin
+#fast-syntax-highlighting ... terminalの文字入力にzshの構文にhighlightつける
 zinit for \
     light-mode  zsh-users/zsh-autosuggestions \
     light-mode  zdharma/fast-syntax-highlighting \
                 zdharma/history-search-multi-word \
     light-mode pick"async.zsh" src"pure.zsh" \
                 sindresorhus/pure
+
+zinit ice blockf
+zinit light zsh-users/zsh-completions
 
 # End of zinit's README
 #
@@ -78,7 +77,7 @@ zinit light "lukechilds/zsh-better-npm-completion"
 # dotfiles
 export PATH="$HOME/bin:$PATH:~/.cargo/bin"
 source ~/.aliases
-source ~/dotfiles/google.sh
+#source ~/.rubyrc
 
 ########################################
 # key-binding
@@ -106,21 +105,33 @@ export PATH="$RBENV_ROOT/shims:$PATH"
 # cdrを有効にする
 # http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#Recent-Directories
 
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-add-zsh-hook chpwd chpwd_recent_dirs
-zstyle ':completion:*:*:cdr:*:*' menu selection
+#autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+#add-zsh-hook chpwd chpwd_recent_dirs
+#zstyle ':completion:*:*:cdr:*:*' menu selection
 
 ########################################
 ## git prompt
 zinit load olivierverdier/zsh-git-prompt
 PROMPT='%B%m%~%b$(git_super_status) %# '
 
+
+
 ########################################
 ## nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# profilerによるとnvmが遅いので停止。
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #
-#
-# end of dotfiles
+#######################################
 
+zinit ice pick"init.sh"
+zinit load "b4b4r07/enhancd"
+
+#profile
+#if (which zprof > /dev/null 2>&1) ;then
+#  zprof
+#fi
+#
+#

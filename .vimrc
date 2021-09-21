@@ -115,7 +115,7 @@ let $FZF_DEFAULT_COMMAND='rg --hidden --files -g ''!.git'' '
 
 """"""""""""""""""""""""""""""""""""""""
 "prettier
-let g:prettier#autoformat = 1
+let g:prettier#autoformat = 0
 "Allow auto formatting for files without "@format" or "@prettier" tag
 let g:prettier#autoformat_require_pragma = 0
 
